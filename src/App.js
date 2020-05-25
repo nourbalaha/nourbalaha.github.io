@@ -5,6 +5,10 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
+        <nav>
+          <span>about</span>
+          <span>protfolio</span>
+        </nav>
       </header>
     </div>
   );
