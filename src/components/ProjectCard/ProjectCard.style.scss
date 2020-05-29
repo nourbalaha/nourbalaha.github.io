@@ -1,0 +1,30 @@
+.project-card{
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    width: 320px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .project-card-image{
+        width: 300px;
+        height: 176px;
+        margin: 10px 0;
+    }
+    .project-card-header{
+        font-family: "ProximaNova-Regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+        font-size: 18px;
+        color: #333333;
+        display: inline;
+        margin: 2px 10px;
+        font-weight: 500;
+    }
+    .project-card-text{
+        font-family: "ProximaNova-Regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+        font-size: 16px;
+        color: #666666;
+        display: inline;
+        margin: 2px 10px 10px 10px;
+    }
+}
