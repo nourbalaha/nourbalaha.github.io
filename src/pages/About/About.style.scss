@@ -1,0 +1,38 @@
+.about-page{
+    // height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #FFFFFF;
+    padding: 150px;
+    .left{
+        padding: 0 150px;
+        width: 40%;
+        h2{
+            font-family: 'NeoSansPro-Regular', "Helvetica Neue", Helvetica, Arial, Sans-serif;
+            font-size: 70px;
+            color: #111111;
+            display: inline;
+            letter-spacing: -0.07em;
+        }
+        h3{
+            font-size: 26px;
+            font-weight: 500;
+            font-family: "ProximaNova-Regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+            color: #666666;
+            line-height: 1.6rem;
+        }
+        p{
+            font-size: 18px;
+            font-family: "ProximaNova-Regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+            color: #111111;
+            display: inline;
+        }
+    }
+    .right{
+        width: 60%;
+        .about-image{
+            height: 300px;
+        }
+    }
+}
