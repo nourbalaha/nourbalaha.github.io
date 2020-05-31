@@ -1,7 +1,13 @@
 .app {
   display: flex;
+  flex-direction: column;
 }
 
-.app-header {
+.footer {
+  height: 90px;
+  background-color: #F5F5F5;
+  color: #666666;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }

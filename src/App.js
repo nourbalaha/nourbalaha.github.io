@@ -5,14 +5,13 @@ import { Switch, Route } from "react-router-dom";
 import About from "./pages/About/About.page";
 import Portfolio from "./pages/Portfolio/Portfolio.page";
 
+import Navbar from "./components/Navbar/Navbar.component";
+
 function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <nav>
-          <span>about</span>
-          <span>protfolio</span>
-        </nav>
+        <Navbar />
       </header>
       <main className="main">
       <Switch>
@@ -21,6 +20,9 @@ function App() {
         <Route path="/portfolio" component={Portfolio} />
       </Switch>
     </main>
+    <footer className="footer">
+      © 2020 Nour Balaha
+    </footer>
     </div>
   );
 }
