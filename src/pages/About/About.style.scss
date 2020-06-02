@@ -1,42 +1,43 @@
 .about-page{
-    // height: 90vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     background-color: #FFFFFF;
-    padding: 150px;
+    margin: 0 150px;
     .left{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-end;
+        align-items: flex-start;
         flex-direction: column;
         padding: 0 150px;
         width: 40%;
-        h2{
+        .left-header{
             font-family: 'NeoSansPro-Regular', "Helvetica Neue", Helvetica, Arial, Sans-serif;
             font-size: 70px;
+            font-weight: 900;
             color: #111111;
-            display: inline;
             letter-spacing: -0.07em;
+            margin-bottom: 15px;
         }
-        h3{
+        .left-title{
             font-size: 26px;
             font-weight: 500;
             font-family: "ProximaNova-Regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-            color: #666666;
+            color: #888888;
             line-height: 1.6rem;
+            margin-bottom: 15px;
         }
-        p{
+        .left-text{
             font-size: 18px;
             font-family: "ProximaNova-Regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-            color: #111111;
-            display: inline;
+            color: #333333;
         }
     }
     .right{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
         width: 60%;
         .about-image{
             height: 400px;
