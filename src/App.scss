@@ -1,0 +1,25 @@
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  height: 90px;
+  background-color: #F5F5F5;
+  color: #666666;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  .footer-item-container{
+    .footer-item{
+      color: #666666;
+      font-size: 32px;
+      cursor: pointer;
+      padding: 0 15px;
+      &:hover{
+        color: #000000;
+      }
+    }
+  }
+}
