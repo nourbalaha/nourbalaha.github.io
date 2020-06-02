@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import { Switch, Route } from "react-router-dom";
 
 import About from "./pages/About/About.page";
@@ -21,7 +21,13 @@ function App() {
       </Switch>
     </main>
     <footer className="footer">
-      © 2020 Nour Balaha
+    <div className="footer-item-container">
+      <span className="footer-item"><i class="fa fa-envelope"></i></span>
+      <span className="footer-item"><i class="fa fa-linkedin"></i></span>
+      <span className="footer-item"><i class="fa fa-twitter"></i></span>
+      <span className="footer-item"><i class="fa fa-github"></i></span>
+    </div>
+    <span>© 2020 Nour Balaha</span>
     </footer>
     </div>
   );
