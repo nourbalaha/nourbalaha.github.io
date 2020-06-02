@@ -6,6 +6,10 @@
     background-color: #FFFFFF;
     padding: 150px;
     .left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         padding: 0 150px;
         width: 40%;
         h2{
@@ -30,9 +34,12 @@
         }
     }
     .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 60%;
         .about-image{
-            height: 300px;
+            height: 400px;
         }
     }
 }

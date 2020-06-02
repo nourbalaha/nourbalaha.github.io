@@ -2,7 +2,7 @@ import React from 'react';
 
 import "./About.style.scss";
 
-import nour from "../../assets/IMG_9377.jpg";
+import nour from "../../assets/profile with strokes.png";
 
 export default function About() {
     return (
