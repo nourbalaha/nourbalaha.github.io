@@ -7,6 +7,7 @@ import Portfolio from "./pages/Portfolio/Portfolio.page";
 import Contact from "./pages/Contact/Contact.page";
 
 import Navbar from "./components/Navbar/Navbar.component";
+import Footer from "./components/Footer/Footer.component";
 
 function App() {
   return (
@@ -22,15 +23,7 @@ function App() {
         <Route path="/contact" component={Contact} />
       </Switch>
     </main>
-    <footer className="footer">
-    <div className="footer-item-container">
-      <span className="footer-item"><i class="fa fa-envelope"></i></span>
-      <span className="footer-item"><i class="fa fa-linkedin"></i></span>
-      <span className="footer-item"><i class="fa fa-twitter"></i></span>
-      <span className="footer-item"><i class="fa fa-github"></i></span>
-    </div>
-    <span>© 2020 Nour Balaha</span>
-    </footer>
+    <Footer />
     </div>
   );
 }
