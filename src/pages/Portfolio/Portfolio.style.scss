@@ -1,7 +1,9 @@
 .portfolio-page{
-    height: 90vh;
+    min-height: 80vh;
     display: flex;
+    flex-wrap: wrap;
     background-color: #FAFAFA;
     justify-content: center;
     align-items: center;
+    padding: 50px;
 }
