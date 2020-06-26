@@ -1,46 +1,70 @@
-.about-page{
-    height: 80vh;
+.about-page {
+  display: flex;
+  flex-direction: column;
+  .about-section {
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: 0 150px;
-    .left{
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-        flex-direction: column;
-        padding: 0 150px;
-        width: 50%;
-        .left-header{
-            font-family: 'NeoSansPro-Regular', "Helvetica Neue", Helvetica, Arial, Sans-serif;
-            font-size: 70px;
-            font-weight: 900;
-            color: #111111;
-            letter-spacing: -0.07em;
-            margin-bottom: 15px;
-        }
-        .left-title{
-            font-size: 26px;
-            font-weight: 500;
-            font-family: "ProximaNova-Regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-            color: #888888;
-            line-height: 1.6rem;
-            margin-bottom: 15px;
-        }
-        .left-text{
-            font-size: 18px;
-            font-family: "ProximaNova-Regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-            color: #333333;
-        }
+    .left {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 0 150px;
+      width: 50%;
+      .left-header {
+        font-family: "NeoSansPro-Regular", "Helvetica Neue", Helvetica, Arial,
+          Sans-serif;
+        font-size: 70px;
+        font-weight: 900;
+        color: #111111;
+        letter-spacing: -0.07em;
+        margin-bottom: 15px;
+      }
+      .left-title {
+        font-size: 26px;
+        font-weight: 500;
+        font-family: "ProximaNova-Regular", "Helvetica Neue", Helvetica, Arial,
+          Sans-serif;
+        color: #888888;
+        line-height: 1.6rem;
+        margin-bottom: 15px;
+      }
+      .left-text {
+        font-size: 18px;
+        font-family: "ProximaNova-Regular", "Helvetica Neue", Helvetica, Arial,
+          Sans-serif;
+        color: #333333;
+      }
     }
-    .right{
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 50%;
-        .about-image{
-            height: 400px;
-        }
+    .right {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 50%;
+      .about-image {
+        height: 400px;
+      }
     }
+  }
+  .skills-section {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+    h2{
+        font-family: "NeoSansPro-Regular", "Helvetica Neue", Helvetica, Arial,
+        Sans-serif;
+      font-size: 32px;
+      font-weight: 900;
+      color: #111111;
+      letter-spacing: .15em;
+      margin-bottom: 15px;
+    }
+  }
 }
