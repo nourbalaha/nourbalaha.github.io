@@ -5,22 +5,22 @@ import {
 
 const data = [
   {
-    name: 'ReactJS', Experience: 80,
+    name: 'ReactJS', Experience: 85,
   },
   {
-    name: 'Javascript', Experience: 85,
+    name: 'Javascript', Experience: 90,
   },
   {
-    name: 'NodeJs', Experience: 70,
+    name: 'NodeJs', Experience: 75,
   },
   {
-    name: 'HTML/CSS', Experience: 75,
+    name: 'HTML/CSS', Experience: 80,
   },
   {
-    name: 'SQL', Experience: 65,
+    name: 'SQL', Experience: 70,
   },
   {
-    name: 'Photoshop', Experience: 60,
+    name: 'Photoshop', Experience: 65,
   },
 ];
 
