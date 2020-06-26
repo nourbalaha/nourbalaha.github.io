@@ -51,7 +51,7 @@
     }
   }
   .skills-section {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,4 +67,41 @@
       margin-bottom: 15px;
     }
   }
+  .facts-section {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 50%;
+        h2{
+            font-family: "NeoSansPro-Regular", "Helvetica Neue", Helvetica, Arial,
+            Sans-serif;
+          font-size: 28px;
+          font-weight: 900;
+          color: #111111;
+          letter-spacing: .1em;
+          margin-bottom: 20px;
+        }
+        span{
+            font-size: 20px;
+            font-family: "ProximaNova-Regular", "Helvetica Neue", Helvetica, Arial,
+              Sans-serif;
+            color: #333333;
+            margin-bottom: 15px;
+        }
+      }
+}
 }
