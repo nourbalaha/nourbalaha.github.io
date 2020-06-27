@@ -25,10 +25,18 @@ const data = [
 ];
 
 export default class SkillsChart extends PureComponent {
+  constructor(props, context) {
+    super(props, context);
+    this.state = {
+      vw : Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0),
+
+    }
+  }
+  
   render() {
     return (
       <BarChart
-        width={800}
+        width={this.state.vw>800?800:this.state.vw}
         height={500}
         data={data}
         margin={{
