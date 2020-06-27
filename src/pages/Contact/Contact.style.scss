@@ -50,4 +50,28 @@
             }
         }
     }
+    @media screen and (max-width: 500px) {
+        .contact-page-header{
+            font-size: 16px;
+            margin: 15px 0;
+        }
+        .contact-page-form{
+            .contact-page-name{
+                font-size: 16px;
+                width: 280px;
+            }
+            .contact-page-email{
+                font-size: 16px;
+                width: 280px;
+            }
+            .contact-page-message{
+                font-size: 16px;
+                width: 280px;
+            }
+            .contact-page-submit{
+                font-size: 14px;
+                width: 100px;
+            }
+        }
+    }
 }
