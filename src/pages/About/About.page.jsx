@@ -8,7 +8,7 @@ import image2 from '../../assets/gallery-image-2.jpeg'
 import image3 from '../../assets/gallery-image-3.jpeg'
 import image4 from '../../assets/gallery-image-4.jpeg'
 import image5 from '../../assets/gallery-image-5.jpeg'
-import bonfire from '../../assets/bonfire.jpg'
+import bonfire from '../../assets/bonfire.png'
 
 import SkillsChart from '../../components/SkillsChart/SkillsChart.component'
 

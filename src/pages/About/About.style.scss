@@ -3,7 +3,6 @@
   flex-direction: column;
   .about-section {
     min-height: 90vh;
-    background-color: #ffffff;
     margin: 0 150px;
     display: flex;
     flex-direction: column;
@@ -35,7 +34,7 @@
           font-weight: 500;
           font-family: "ProximaNova-Regular", "Helvetica Neue", Helvetica, Arial,
             Sans-serif;
-          color: #888888;
+          color: #666666;
           line-height: 1.6rem;
           margin-bottom: 15px;
         }
@@ -60,13 +59,14 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
       .gallery-image {
         width: 150px;
         height: 100px;
         margin: 30px 20px;
         border-radius: 5px;
         padding: 5px;
+        background-color: #dddddd;
         box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
         &:hover{
           box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.6);
@@ -80,7 +80,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f5f5f5;
     h2 {
       font-family: "NeoSansPro-Regular", "Helvetica Neue", Helvetica, Arial,
         Sans-serif;
@@ -96,7 +95,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
     .left {
       display: flex;
       flex-direction: column;
