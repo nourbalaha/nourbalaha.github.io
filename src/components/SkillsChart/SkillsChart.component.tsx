@@ -12,15 +12,15 @@ import {
 const SkillsChart = () => {
   const data = [
     {
-      name: "ReactJS",
+      name: "React",
       Experience: 85,
     },
     {
-      name: "Javascript",
+      name: "TypeScript",
       Experience: 90,
     },
     {
-      name: "NodeJs",
+      name: "Node",
       Experience: 75,
     },
     {
@@ -32,8 +32,12 @@ const SkillsChart = () => {
       Experience: 70,
     },
     {
-      name: "Photoshop",
-      Experience: 65,
+      name: "Go",
+      Experience: 60,
+    },
+    {
+      name: "DevOps",
+      Experience: 60,
     },
   ];
   const vw = Math.max(
