@@ -20,6 +20,9 @@ const Navbar: FC<any> = ({ history }) => {
         <span className="nav-item" onClick={() => navigate("/about")}>
         about
       </span>
+        <span className="nav-item" onClick={() => navigate("/experience")}>
+          experience
+        </span>
         <span className="nav-item" onClick={() => navigate("/portfolio")}>
         protfolio
       </span>

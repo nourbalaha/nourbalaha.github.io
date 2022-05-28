@@ -1,0 +1,89 @@
+$black: #111111;
+$grey: #666666;
+$black2: #333333;
+
+.experience-page {
+  min-height: 82vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "NeoSansPro-Regular", "Helvetica Neue", Helvetica, Arial,
+    Sans-serif;
+  .experience-wrapper {
+    width: 768px;
+    margin-top: 100px;
+    .experience-page-header {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 32px;
+    }
+    .experience-page-body {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .work-places {
+        list-style: none;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 200px;
+        li {
+          padding: 20px 2px 20px 20px;
+          border-left: 1px solid $black;
+          cursor: pointer;
+          &:hover {
+            color: #d3d3d3;
+            background-color: #555555;
+          }
+        }
+      }
+      .job-description {
+        width: 568px;
+        margin-left: 32px;
+        .job-description-header {
+          margin-bottom: 32px;
+          .job-title {
+            font-size: 28px;
+            columns: $black;
+            margin-bottom: 6px;
+          }
+          .job-date {
+            font-size: 15px;
+            margin-bottom: 1rem;
+            color: #555555;
+          }
+        }
+        .job-description-body {
+          list-style: none;
+          font-size: 18px;
+          li {
+            padding-bottom: 13px;
+            padding-left: 30px;
+            position: relative;
+            &::before {
+              content: "▹";
+              position: absolute;
+              left: 0px;
+              color: $black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.selected {
+  color: #d3d3d3;
+  background-color: #555555;
+  border-left: 5px solid $black !important;
+}
+
+@media screen and (max-width: 500px) {
+  .experience-page-header {
+    font-size: 16px;
+    margin: 15px 0;
+  }
+}
