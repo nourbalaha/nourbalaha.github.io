@@ -28,10 +28,13 @@
       opacity: 0.8;
     }
   }
+}
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 480px) {
     .nav-img {
       display: none;
     }
+    .nav-item {
+      padding: 18px 9px;
+    }
   }
-}

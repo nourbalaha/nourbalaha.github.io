@@ -3,6 +3,7 @@ import "./Experience.style.scss";
 import { Job, list } from './job-list'
 
 export default function Experience() {
+  // eslint-disable-next-line
   const [jobList, setJobList] = useState<Array<Job>>(list);
   const [selectedJob, setSelectedJob] = useState<Job>(jobList[0]);
 
