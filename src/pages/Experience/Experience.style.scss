@@ -88,7 +88,7 @@ $black2: #333333;
         .experience-wrapper {
           width: 100%;
           .experience-page-header {
-            font-size: 48px;
+            font-size: 42px;
           }
           .experience-page-body {
             flex-direction: column ;
@@ -103,7 +103,7 @@ $black2: #333333;
               width: 100%;
               margin-bottom: 50px;
               li {
-                padding: 20px;
+                padding: 15px;
                 border-left: none;
                 border-bottom: 1px solid $black;
               }
@@ -115,14 +115,14 @@ $black2: #333333;
               .job-description-header {
                 margin-bottom: 32px;
                 .job-title {
-                  font-size: 38px;
+                  font-size: 36px;
                 }
                 .job-date {
-                  font-size: 24px;
+                  font-size: 20px;
                 }
               }
               .job-description-body {
-                font-size: 28px;
+                font-size: 24px;
               }
             }
           }

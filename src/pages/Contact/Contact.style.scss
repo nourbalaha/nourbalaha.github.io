@@ -55,24 +55,25 @@
     }
     @media screen and (max-width: 500px) {
         .contact-page-header{
-            font-size: 16px;
-            margin: 15px 0;
+            font-size: 28px;
+            margin: 15px 3%;
+            text-align: center;
         }
         .contact-page-form{
             .contact-page-name{
-                font-size: 16px;
+                font-size: 20px;
                 width: 280px;
             }
             .contact-page-email{
-                font-size: 16px;
+                font-size: 20px;
                 width: 280px;
             }
             .contact-page-message{
-                font-size: 16px;
+                font-size: 20px;
                 width: 280px;
             }
             .contact-page-submit{
-                font-size: 14px;
+                font-size: 18px;
                 width: 100px;
             }
         }

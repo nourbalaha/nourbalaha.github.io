@@ -148,6 +148,14 @@
   @media screen and (max-width: 768px) {
     .about-section {
       .top {
+        .left {
+          .left-title {
+            font-size: 28px;
+          }
+          .left-text {
+            font-size: 24px;
+          }
+        }
         .right {
           .about-image {
             width: 300px;
@@ -165,6 +173,12 @@
       }
       .right {
         width: 300px;
+        h2{
+          font-size: 32px;
+        }
+        span{
+          font-size: 24px;
+        }
       }
     }
   }
