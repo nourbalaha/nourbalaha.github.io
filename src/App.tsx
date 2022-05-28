@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.scss";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Particles from "react-particles-js";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
 
 import About from "./pages/About/About.page";
 import Portfolio from "./pages/Portfolio/Portfolio.page";
@@ -10,62 +11,20 @@ import Contact from "./pages/Contact/Contact.page";
 import Navbar from "./components/Navbar/Navbar.component";
 import Footer from "./components/Footer/Footer.component";
 
+import { particlesOptions } from "./config/particles-options"
+
 function App() {
-  const particlesParams = {
-    particles: {
-      number: {
-        value: 160,
-        density: {
-          enable: false,
-        },
-      },
-      size: {
-        value: 3,
-        random: true,
-        anim: {
-          speed: 4,
-          size_min: 0.3,
-        },
-      },
-      line_linked: {
-        enable: false,
-      },
-      move: {
-        random: true,
-        speed: 1,
-      },
-    },
-    interactivity: {
-      events: {
-        onhover: {
-          enable: true,
-          mode: "bubble",
-        },
-        onclick: {
-          enable: true,
-          mode: "repulse",
-        },
-      },
-      modes: {
-        bubble: {
-          distance: 250,
-          duration: 2,
-          size: 0,
-          opacity: 0,
-        },
-        repulse: {
-          distance: 400,
-          duration: 4,
-        },
-      },
-    },
+  const particlesInit = async (main: any) => {
+    await loadFull(main);
   };
 
   return (
     <div className="app">
       <Particles
+        id="tsparticles"
+        init={particlesInit}
         className="particles"
-        params={particlesParams}
+        options={particlesOptions}
       />
       <header className="app-header">
         <Navbar />
