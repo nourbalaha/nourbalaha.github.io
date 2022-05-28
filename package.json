@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "http://nourbalaha.github.io/",
   "dependencies": {
-    "gh-pages": "^3.0.0",
+    "gh-pages": "^4.0.0",
     "node-sass": "^7.0.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
