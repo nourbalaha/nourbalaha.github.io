@@ -20,6 +20,21 @@
         color: #656565;
       }
     }
+    .resume {
+      font-size: 18px;
+      font-weight: bold;
+      font-family: "ProximaNova-Regular", "Helvetica Neue", Helvetica, Arial,
+        Sans-serif;
+      color: #ffffff;
+      text-decoration: none;
+      border: 1px solid #eeeeee;
+      border-radius: 5px;
+      padding: 6px 12px;
+      margin-left: 30px;
+      &:hover {
+        background-color: #656565;
+      }
+    }
   }
   .nav-img {
     width: 60px;
@@ -30,11 +45,14 @@
   }
 }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     .nav-img {
       display: none;
     }
     .nav-item {
       padding: 18px 9px !important;
+    }
+    .resume {
+      display: none;
     }
   }
