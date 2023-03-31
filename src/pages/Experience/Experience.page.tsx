@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import "./Experience.style.scss";
 import { Job, list } from './job-list'
 

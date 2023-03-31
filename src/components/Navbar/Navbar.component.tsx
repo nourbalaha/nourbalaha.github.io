@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { useNavigate } from "react-router-dom";
 
 import "./Navbar.style.scss";
@@ -31,7 +31,7 @@ const Navbar: FC<any> = () => {
         </span>
         <a
           className="resume"
-          href={process.env.PUBLIC_URL + '/resume.pdf'}
+          href={'/resume.pdf'}
           download
         >
           resume
