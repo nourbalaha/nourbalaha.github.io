@@ -1,11 +1,10 @@
-import { FC } from "react";
 import { useNavigate } from "react-router-dom";
 
 import "./Navbar.style.scss";
 
 import logo from "../../assets/Logo.png";
 
-const Navbar: FC = () => {
+const Navbar: React.FC = () => {
   const navigate = useNavigate();
 
   return (
@@ -22,12 +21,6 @@ const Navbar: FC = () => {
         </span>
         <span className="nav-item" onClick={() => navigate("/experience")}>
           experience
-        </span>
-        <span className="nav-item" onClick={() => navigate("/portfolio")}>
-          protfolio
-        </span>
-        <span className="nav-item" onClick={() => navigate("/contact")}>
-          contact
         </span>
         <a
           className="resume"

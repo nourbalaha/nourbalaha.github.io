@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import "./Experience.style.scss";
 import { Job, list } from './job-list'
 
-export default function Experience() {
+const Experience: React.FC = () => {
   const jobList = useMemo(() => list, []);
   const [selectedJob, setSelectedJob] = useState<Job>(jobList[0]);
 
@@ -46,3 +46,5 @@ export default function Experience() {
     </div>
   )
 }
+
+export default Experience;

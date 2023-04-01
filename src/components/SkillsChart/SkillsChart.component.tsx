@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import {
   BarChart,
   Bar,
@@ -8,8 +9,8 @@ import {
   Legend,
 } from "recharts";
 
-const SkillsChart = () => {
-  const data = [
+const SkillsChart: React.FC = () => {
+  const data = useMemo(() => [
     {
       name: "React",
       Experience: 85,
@@ -38,7 +39,8 @@ const SkillsChart = () => {
       name: "DevOps",
       Experience: 60,
     },
-  ];
+  ], []);
+
   const vw = Math.max(
     document.documentElement.clientWidth || 0,
     window.innerWidth || 0

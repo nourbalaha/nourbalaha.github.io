@@ -10,7 +10,7 @@ import bonfire from "../../assets/bonfire.png";
 
 import SkillsChart from "../../components/SkillsChart/SkillsChart.component";
 
-export default function About() {
+const About: React.FC = () => {
   return (
     <div className="about-page">
       <div className="about-section">
@@ -60,3 +60,5 @@ export default function About() {
     </div>
   );
 }
+
+export default About;
