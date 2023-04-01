@@ -5,7 +5,7 @@ import "./Navbar.style.scss";
 
 import logo from "../../assets/Logo.png";
 
-const Navbar: FC<any> = () => {
+const Navbar: FC = () => {
   const navigate = useNavigate();
 
   return (

@@ -1,16 +1,15 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import "./Experience.style.scss";
 import { Job, list } from './job-list'
 
 export default function Experience() {
-  // eslint-disable-next-line
-  const [jobList, setJobList] = useState<Array<Job>>(list);
+  const jobList = useMemo(() => list, []);
   const [selectedJob, setSelectedJob] = useState<Job>(jobList[0]);
 
   const handleSelectJob = (event: any) => {
     const id = event.target.id;
 
-    for (let job of jobList) {
+    for (const job of jobList) {
       job.isSelected = false;
       if (job.id === id) {
         job.isSelected = true

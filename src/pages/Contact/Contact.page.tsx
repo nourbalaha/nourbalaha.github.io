@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { useNavigate } from "react-router-dom";
-import emailjs from '@emailjs/browser';
+import { sendForm } from '@emailjs/browser'
 import Swal from 'sweetalert2'
 import "./Contact.style.scss";
 
@@ -11,24 +11,26 @@ export default function Contact() {
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_00c3dko', 'template_s1hz2ni', form.current!, 'fCCaInLdsUxWJseky')
-      .then((result) => {
-        Swal.fire(
-          'Email has been sent!',
-          'Thank you for contacting me.',
-          'success'
-        ).then(() => {
-          navigate("/about");
-        })
-      }, (error) => {
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'Something went wrong!',
-        }).then(() => {
-          navigate("/about");
-        })
-      });
+    if (form.current) {
+      sendForm('service_00c3dko', 'template_s1hz2ni', form.current, 'fCCaInLdsUxWJseky')
+        .then(() => {
+          Swal.fire(
+            'Email has been sent!',
+            'Thank you for contacting me.',
+            'success'
+          ).then(() => {
+            navigate("/about");
+          })
+        }, () => {
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+          }).then(() => {
+            navigate("/about");
+          })
+        });
+    }
   };
 
   return (

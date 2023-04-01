@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./About.style.scss";
 
 import nour from "../../assets/profile.png";
