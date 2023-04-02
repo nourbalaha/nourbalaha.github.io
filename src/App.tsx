@@ -1,5 +1,5 @@
-import "./App.scss";
 import { Routes, Route, Navigate } from "react-router-dom";
+import styled from "styled-components";
 
 import About from "./pages/About/About.page";
 import Experience from "./pages/Experience/Experience.page";
@@ -9,7 +9,7 @@ import Footer from "./components/Footer/Footer.component";
 
 function App() {
   return (
-    <div className="app">
+    <Wrapper>
       <header className="app-header">
         <Navbar />
       </header>
@@ -21,8 +21,14 @@ function App() {
         </Routes>
       </main>
       <Footer />
-    </div>
+    </Wrapper>
   );
 }
 
 export default App;
+
+const Wrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  background-color: #B1B1B1;
+`;
