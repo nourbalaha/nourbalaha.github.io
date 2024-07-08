@@ -4,27 +4,17 @@ const Footer: React.FC = () => {
   return (
     <Wrapper className="footer">
       <div>
-        <Item
-          onClick={() =>
-            window.open("https://www.linkedin.com/in/nourbalaha0/", "_blank")
-          }
-        >
-          <i className="fa fa-linkedin"></i>
+        <Item onClick={() => window.open("https://www.linkedin.com/in/nourbalaha0/", "_blank")}>
+          <i className="fa-brands fa-linkedin"></i>
         </Item>
-        <Item
-          onClick={() =>
-            window.open("https://twitter.com/NourBalaha", "_blank")
-          }
-        >
-          <i className="fa fa-twitter"></i>
+        <Item onClick={() => window.open("https://twitter.com/NourBalaha", "_blank")}>
+          <i className="fa-brands fa-x-twitter"></i>
         </Item>
-        <Item
-          onClick={() => window.open("https://github.com/nourbalaha", "_blank")}
-        >
-          <i className="fa fa-github"></i>
+        <Item onClick={() => window.open("https://github.com/nourbalaha", "_blank")}>
+          <i className="fa-brands fa-github"></i>
         </Item>
       </div>
-      <span>© 2023 Nour Balaha</span>
+      <span>© 2024 Nour Balaha</span>
     </Wrapper>
   );
 }
