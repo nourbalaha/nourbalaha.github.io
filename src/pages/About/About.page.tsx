@@ -49,8 +49,8 @@ const About: React.FC = () => {
         <div className="right">
           <h2>Random facts</h2>
           <span>I drink a lot of coffee</span>
-          <span>I love coding</span>
-          <span>I love problem solving</span>
+          <span>Proud to hold Japanese citizenship</span>
+          <span>I love coding and problem solving</span>
           <span>When I feel down I play animal crossing</span>
           <span>I want to learn all the 2,136 Kanjis</span>
           <span>Dark Souls is the best game ever</span>
