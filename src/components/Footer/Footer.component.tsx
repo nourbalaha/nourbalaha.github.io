@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           <i className="fa-brands fa-github"></i>
         </Item>
       </div>
-      <span>© 2024 Nour Balaha</span>
+      <span>© 2025 Nour Balaha</span>
     </Wrapper>
   );
 }
